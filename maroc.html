@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Maroc – Terre de contrastes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #2c2c2c;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        h1, h2 {
+            color: #2f3e46;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* -------------------- HEADER -------------------- */
+        header {
+            background-color: #2f3e46;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* logo à gauche + menu centré */
+        }
+
+        .logo {
+            width: 95px;
+            height: auto;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* centre le menu */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #a8dadc;
+        }
+
+        /* -------------------- CONTENU -------------------- */
+        .contenu {
+            width: 75%;
+            margin: 50px auto;
+            font-size: 14px;
+            color: #2c2c2c;
+            text-align: left;
+        }
+
+        .contenu p {
+            margin-bottom: 25px;
+        }
+
+        .image-maroc {
+            width: 65%;
+            margin: 30px auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* -------------------- FOOTER -------------------- */
+        .footer {
+            background-color: #2f3e46;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- LOGO À GAUCHE -->
+    <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
+
+    <!-- MENU CENTRÉ -->
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="àpropos.html">À propos de l'AMI</a></li>
+            <li><a href="maroc.html">Le Maroc terre de contrastes</a></li>
+            <li><a href="semaines.html">Semaines culturelles et patrimoniales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Le Maroc – Terre de contrastes</h1>
+
+<div class="contenu">
+
+    <p>
+        Le Maroc est un pays où les contrastes ne sont pas seulement visibles : ils façonnent l’identité même du territoire.
+        Entre modernité et traditions, immensité désertique et chaînes montagneuses, villes dynamiques et villages ancestraux,
+        le Maroc offre une diversité rare qui en fait l’un des pays les plus fascinants du monde arabe et africain.
+    </p>
+
+    <img
+        src="https://media.lesechos.com/api/v1/images/view/5e567c12d286c23cea3438f6/1280x720/6590-1479987998-maroc-temoignages.jpg"
+        alt="Scène du Maroc"
+        class="image-maroc"
+    />
+
+    <p>
+        Du nord méditerranéen aux portes du Sahara, chaque région possède une personnalité propre.
+        Les médinas historiques, avec leurs ruelles étroites et leurs souks animés, coexistent avec des quartiers modernes,
+        des infrastructures innovantes et des pôles universitaires de renommée internationale.
+        Cette coexistence harmonieuse entre héritage et innovation constitue l’une des signatures du pays.
+    </p>
+
+    <p>
+        Le Maroc est également un carrefour culturel où se rencontrent influences amazighes, arabes, andalouses, africaines et méditerranéennes.
+        Cette richesse se reflète dans l’architecture, la gastronomie, les arts, les langues et les modes de vie.
+        Le pays a su préserver ses traditions tout en s’ouvrant au monde, créant un équilibre unique entre authenticité et modernité.
+    </p>
+
+    <p>
+        Terre d’hospitalité, le Maroc séduit par la chaleur de ses habitants, la diversité de ses paysages et la profondeur de son patrimoine.
+        C’est un espace d’exploration, d’apprentissage et de découverte, où chaque visiteur peut ressentir la force d’une culture millénaire
+        en constante évolution.
+    </p>
+
+</div>
+
+<div class="footer">
+    <a href="àpropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <p>&copy; 2026 AMI – Tous droits réservés</p>
+</div>
+
+</body>
+</html>

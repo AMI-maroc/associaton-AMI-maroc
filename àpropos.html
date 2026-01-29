@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de l'AMI</title>
+
+    <!-- Police moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* -------------------- GLOBAL -------------------- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #2c2c2c;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        h1, h2 {
+            color: #2f3e46;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* -------------------- HEADER -------------------- */
+        header {
+            background-color: #2f3e46;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* logo à gauche + menu centré */
+        }
+
+        .logo {
+            width: 95px;
+            height: auto;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* centre le menu */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #a8dadc;
+        }
+
+        /* -------------------- CONTENU -------------------- */
+        .contenu {
+            width: 75%;
+            margin: 50px auto;
+            font-size: 14px;
+            color: #2c2c2c;
+            text-align: left;
+        }
+
+        .contenu p {
+            margin-bottom: 25px;
+        }
+
+        .contenu a {
+            color: #2f3e46;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contenu a:hover {
+            text-decoration: underline;
+        }
+
+        .image-conference {
+            width: 65%;
+            margin: 30px auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* -------------------- FOOTER -------------------- */
+        .footer {
+            background-color: #2f3e46;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- LOGO À GAUCHE -->
+    <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
+
+    <!-- MENU CENTRÉ -->
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="àpropos.html">À propos de l'AMI</a></li>
+            <li><a href="maroc.html">Le Maroc terre de contrastes </a></li>
+            <li><a href="semaines.html">Semaines culturelles et patrimoniales </a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>À propos de l’AMI</h1>
+
+<div class="contenu">
+
+    <p>
+        L’Association Marocaine de l’Interdisciplinarité (AMI) est une structure émergente engagée dans la 
+        promotion de la recherche, de l’innovation et de la collaboration scientifique au Maroc.
+    </p>
+
+    <p>
+        L’AMI s’est fait connaître en organisant la conférence internationale 
+        <strong>WCCS26</strong>, un événement majeur consacré aux systèmes complexes et aux sciences interdisciplinaires.
+        Le site officiel de la conférence est accessible ici :
+        <br>
+        <a href="https://wccs-conference.org/wccs26/" target="_blank">
+            https://wccs-conference.org/wccs26/
+        </a>
+    </p>
+
+    <p>
+        La prochaine édition de la conférence se tiendra du 
+        <strong>20 au 22 avril 2026</strong> à la 
+        <strong>Mohammed VI Polytechnic University</strong>, située à 
+        <strong>Ben Guerir – Marrakech, Maroc</strong>.
+    </p>
+
+    <img 
+        src="https://www.archidatum.com/media/8810/universite_mohammed_vi_polytecnique_benguerir_morocco_ricardo_bofill_taller_de_arquitectura_20.jpg" 
+        alt="Université Mohammed VI Polytechnique" 
+        class="image-conference"
+    >
+
+    <p>
+        Forte de cette expérience, l’AMI élargit aujourd’hui son champ d’action en développant un nouveau 
+        programme : les <strong>Semaines Culturelles et Patrimoniales du Maroc</strong>.
+    </p>
+
+    <p>
+        Ce projet vise à offrir aux étudiants, chercheurs et visiteurs internationaux une immersion unique 
+        mêlant culture, patrimoine, sciences et découverte du territoire marocain.
+    </p>
+
+    <p>
+        L’AMI ambitionne de devenir un acteur de référence dans la diffusion de la culture scientifique 
+        et la valorisation du patrimoine marocain à travers des événements éducatifs, interdisciplinaires 
+        et ouverts au monde.
+    </p>
+
+</div>
+
+<div class="footer">
+    <a href="àpropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <p>&copy; 2026 AMI – Tous droits réservés</p>
+</div>
+
+</body>
+</html>

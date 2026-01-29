@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semaines culturelles et patrimoniales – AMI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #2c2c2c;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    h1, h2 {
+      color: #2f3e46;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* -------------------- HEADER MODIFIÉ -------------------- */
+    header {
+      background-color: #2f3e46;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* logo à gauche + menu centré */
+    }
+
+    .logo {
+      width: 95px;
+      height: auto;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center; /* centre le menu */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #a8dadc;
+    }
+
+    /* -------------------- SLIDER -------------------- */
+    .hero-slider {
+      position: relative;
+      max-width: 1200px;
+      height: 320px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    .hero-slider .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .hero-slider .slide.active {
+      opacity: 1;
+    }
+
+    .hero-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .slider-arrows .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      padding: 6px 10px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .slider-arrows .arrow:hover {
+      background: rgba(0,0,0,0.6);
+    }
+
+    .slider-arrows .left { left: 15px; }
+    .slider-arrows .right { right: 15px; }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 12px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .slider-dots span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      background: white;
+      opacity: 0.5;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .slider-dots span.active {
+      opacity: 1;
+      background: #2f3e46;
+    }
+
+    .contenu {
+      width: 75%;
+      margin: 40px auto 50px auto;
+      font-size: 14px;
+      color: #2c2c2c;
+      text-align: left;
+    }
+
+    .contenu p {
+      margin-bottom: 25px;
+    }
+
+    .pdf-btn {
+      display: inline-block;
+      background-color: #2f3e46;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px;
+    }
+
+    .pdf-btn:hover {
+      background-color: #1f2c32;
+    }
+
+    .footer {
+      background-color: #2f3e46;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <!-- LOGO À GAUCHE -->
+  <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
+
+  <!-- MENU CENTRÉ -->
+  <nav>
+    <ul>
+      <li><a href="acceuil.html">Accueil</a></li>
+      <li><a href="àpropos.html">À propos de l'AMI</a></li>
+      <li><a href="maroc.html">Le Maroc terre de contrastes</a></li>
+      <li><a href="semaines.html">Semaines culturelles et patrimoniales</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Semaines culturelles et patrimoniales</h1>
+
+<!-- SLIDER -->
+<div class="hero-slider">
+  <div class="slide active">
+    <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/ait-ben-haddou.jpg" />
+  </div>
+  <div class="slide">
+    <img src="https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1300/v1611825780/ramuhwqy0zshh3ajqqcc.jpg" />
+  </div>
+  <div class="slide">
+    <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/09/ok-plaza-jemaa-el-fna.jpg" />
+  </div>
+
+  <div class="slider-arrows">
+    <span class="arrow left">&#10094;</span>
+    <span class="arrow right">&#10095;</span>
+  </div>
+
+  <div class="slider-dots"></div>
+</div>
+
+<div class="contenu">
+  <p>
+    Les Semaines Culturelles et Patrimoniales de l’AMI proposent une immersion académique au cœur du Maroc. 
+    Chaque parcours offre une découverte thématique construite autour de visites, d’échanges et d’expériences authentiques. 
+    Pour le moment, deux circuits sont disponibles et constituent les premières étapes d’un programme en développement.
+  </p>
+
+  <p>
+    La semaine consacrée à la gastronomie marocaine permet d’explorer les saveurs du pays à travers ses marchés, 
+    ses traditions culinaires et les pratiques locales qui façonnent l’identité culinaire du Maroc. 
+    C’est une occasion de comprendre la richesse culturelle qui se cache derrière chaque région et chaque recette.
+  </p>
+
+  <p>
+    La semaine dédiée à l’architecture et au patrimoine met en lumière la diversité des formes architecturales marocaines, 
+    des médinas historiques aux espaces contemporains. 
+    Elle offre une lecture vivante de l’évolution du territoire et des savoir-faire traditionnels qui continuent de marquer le paysage marocain.
+  </p>
+
+  <h2 style="margin-top:50px;">À venir</h2>
+
+  <p>
+    D’autres circuits thématiques seront progressivement ajoutés. 
+    Chaque parcours complet sera présenté ultérieurement sous forme de documents détaillés afin d’accompagner les participants dans leur choix.
+  </p>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="circuit_gastronomie.pdf" download class="pdf-btn">
+      Télécharger le circuit Gastronomie (PDF)
+    </a>
+    <a href="circuit_architecture.pdf" download class="pdf-btn">
+      Télécharger le circuit Architecture (PDF)
+    </a>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="àpropos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+  <p>&copy; 2025 AMI – Tous droits réservés</p>
+</div>
+
+<!-- SCRIPT SLIDER -->
+<script>
+const slides = document.querySelectorAll('.hero-slider .slide');
+const dotsContainer = document.querySelector('.slider-dots');
+const leftArrow = document.querySelector('.arrow.left');
+const rightArrow = document.querySelector('.arrow.right');
+
+let index = 0;
+
+// Création des points
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.slider-dots span');
+
+function showSlide(i) {
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
+
+rightArrow.onclick = nextSlide;
+leftArrow.onclick = prevSlide;
+
+dots.forEach((dot, i) => {
+  dot.onclick = () => {
+    index = i;
+    showSlide(index);
+  };
+});
+
+let autoSlide = setInterval(nextSlide, 4000);
+
+document.querySelector('.hero-slider').addEventListener('mouseover', () => {
+  clearInterval(autoSlide);
+});
+
+document.querySelector('.hero-slider').addEventListener('mouseout', () => {
+  autoSlide = setInterval(nextSlide, 4000);
+});
+</script>
+
+</body>
+</html>
