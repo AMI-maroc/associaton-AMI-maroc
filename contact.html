@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – AMI</title>
 
-    <!-- Police moderne -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -30,7 +29,7 @@
             padding: 15px 40px;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* logo à gauche + menu centré */
+            justify-content: space-between;
         }
 
         .logo {
@@ -41,7 +40,7 @@
         nav {
             flex: 1;
             display: flex;
-            justify-content: center; /* centre le menu */
+            justify-content: center;
         }
 
         nav ul {
@@ -109,17 +108,49 @@
         .footer p {
             color: white;
         }
+
+        /* -------------------- RESPONSIVE -------------------- */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+                text-align: center;
+            }
+
+            .logo {
+                width: 70px;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .contenu {
+                width: 90%;
+                font-size: 15px;
+            }
+
+            .footer a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-<!-- -------------------- HEADER -------------------- -->
 <header>
-    <!-- LOGO À GAUCHE -->
     <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
 
-    <!-- MENU CENTRÉ -->
     <nav>
         <ul>
             <li><a href="/index.html">Accueil</a></li>
@@ -131,10 +162,8 @@
     </nav>
 </header>
 
-<!-- -------------------- TITRE -------------------- -->
 <h1>Contact</h1>
 
-<!-- -------------------- CONTENU -------------------- -->
 <div class="contenu">
 
     <p>
@@ -162,16 +191,11 @@
 
 </div>
 
-<!-- -------------------- FOOTER -------------------- -->
 <div class="footer">
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/contact.html">Contact</a>
     <p>&copy; 2026 AMI – Tous droits réservés</p>
 </div>
 
 </body>
 </html>
-
-
-
-
