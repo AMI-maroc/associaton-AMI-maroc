@@ -28,7 +28,7 @@
             padding: 15px 40px;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* logo à gauche + menu centré */
+            justify-content: space-between;
         }
 
         .logo {
@@ -39,7 +39,7 @@
         nav {
             flex: 1;
             display: flex;
-            justify-content: center; /* centre le menu */
+            justify-content: center;
         }
 
         nav ul {
@@ -104,16 +104,53 @@
         .footer p {
             color: white;
         }
+
+        /* -------------------- RESPONSIVE -------------------- */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+                text-align: center;
+            }
+
+            .logo {
+                width: 70px;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .contenu {
+                width: 90%;
+                font-size: 15px;
+            }
+
+            .image-maroc {
+                width: 100%;
+            }
+
+            .footer a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <!-- LOGO À GAUCHE -->
     <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
 
-    <!-- MENU CENTRÉ -->
     <nav>
         <ul>
             <li><a href="/index.html">Accueil</a></li>
@@ -145,13 +182,11 @@
         Du nord méditerranéen aux portes du Sahara, chaque région possède une personnalité propre.
         Les médinas historiques, avec leurs ruelles étroites et leurs souks animés, coexistent avec des quartiers modernes,
         des infrastructures innovantes et des pôles universitaires de renommée internationale.
-        Cette coexistence harmonieuse entre héritage et innovation constitue l’une des signatures du pays.
     </p>
 
     <p>
         Le Maroc est également un carrefour culturel où se rencontrent influences amazighes, arabes, andalouses, africaines et méditerranéennes.
         Cette richesse se reflète dans l’architecture, la gastronomie, les arts, les langues et les modes de vie.
-        Le pays a su préserver ses traditions tout en s’ouvrant au monde, créant un équilibre unique entre authenticité et modernité.
     </p>
 
     <p>
@@ -163,14 +198,10 @@
 </div>
 
 <div class="footer">
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/contact.html">Contact</a>
     <p>&copy; 2026 AMI – Tous droits réservés</p>
 </div>
 
 </body>
 </html>
-
-
-
-
