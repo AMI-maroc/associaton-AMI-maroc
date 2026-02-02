@@ -21,13 +21,13 @@
       text-align: center;
     }
 
-    /* -------------------- HEADER MODIFIÉ -------------------- */
+    /* -------------------- HEADER -------------------- */
     header {
       background-color: #2f3e46;
       padding: 15px 40px;
       display: flex;
       align-items: center;
-      justify-content: space-between; /* logo à gauche + menu centré */
+      justify-content: space-between;
     }
 
     .logo {
@@ -38,7 +38,7 @@
     nav {
       flex: 1;
       display: flex;
-      justify-content: center; /* centre le menu */
+      justify-content: center;
     }
 
     nav ul {
@@ -133,6 +133,7 @@
       background: #2f3e46;
     }
 
+    /* -------------------- CONTENU -------------------- */
     .contenu {
       width: 75%;
       margin: 40px auto 50px auto;
@@ -160,6 +161,7 @@
       background-color: #1f2c32;
     }
 
+    /* -------------------- FOOTER -------------------- */
     .footer {
       background-color: #2f3e46;
       color: white;
@@ -178,16 +180,66 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    /* -------------------- RESPONSIVE -------------------- */
+    @media (max-width: 768px) {
+
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      .logo {
+        width: 70px;
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        font-size: 14px;
+      }
+
+      .hero-slider {
+        width: 100%;
+        height: 220px;
+      }
+
+      .arrow {
+        font-size: 20px;
+        padding: 4px 8px;
+      }
+
+      .contenu {
+        width: 90%;
+        font-size: 15px;
+      }
+
+      .pdf-btn {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      .footer a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <!-- LOGO À GAUCHE -->
   <img class="logo" src="https://i.imgur.com/JSqrru2.png" alt="Logo AMI">
 
-  <!-- MENU CENTRÉ -->
   <nav>
     <ul>
       <li><a href="/index.html">Accueil</a></li>
@@ -201,7 +253,6 @@
 
 <h1>Semaines culturelles et patrimoniales</h1>
 
-<!-- SLIDER -->
 <div class="hero-slider">
   <div class="slide active">
     <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/ait-ben-haddou.jpg" />
@@ -224,27 +275,23 @@
 <div class="contenu">
   <p>
     Les Semaines Culturelles et Patrimoniales de l’AMI proposent une immersion académique au cœur du Maroc. 
-    Chaque parcours offre une découverte thématique construite autour de visites, d’échanges et d’expériences authentiques. 
-    Pour le moment, deux circuits sont disponibles et constituent les premières étapes d’un programme en développement.
+    Chaque parcours offre une découverte thématique construite autour de visites, d’échanges et d’expériences authentiques.
   </p>
 
   <p>
     La semaine consacrée à la gastronomie marocaine permet d’explorer les saveurs du pays à travers ses marchés, 
-    ses traditions culinaires et les pratiques locales qui façonnent l’identité culinaire du Maroc. 
-    C’est une occasion de comprendre la richesse culturelle qui se cache derrière chaque région et chaque recette.
+    ses traditions culinaires et les pratiques locales qui façonnent l’identité culinaire du Maroc.
   </p>
 
   <p>
     La semaine dédiée à l’architecture et au patrimoine met en lumière la diversité des formes architecturales marocaines, 
-    des médinas historiques aux espaces contemporains. 
-    Elle offre une lecture vivante de l’évolution du territoire et des savoir-faire traditionnels qui continuent de marquer le paysage marocain.
+    des médinas historiques aux espaces contemporains.
   </p>
 
   <h2 style="margin-top:50px;">À venir</h2>
 
   <p>
-    D’autres circuits thématiques seront progressivement ajoutés. 
-    Chaque parcours complet sera présenté ultérieurement sous forme de documents détaillés afin d’accompagner les participants dans leur choix.
+    D’autres circuits thématiques seront progressivement ajoutés.
   </p>
 
   <div style="text-align:center; margin-top:30px;">
@@ -258,12 +305,11 @@
 </div>
 
 <div class="footer">
-  <a href="apropos.html">À propos</a>
-  <a href="contact.html">Contact</a>
+  <a href="/apropos.html">À propos</a>
+  <a href="/contact.html">Contact</a>
   <p>&copy; 2025 AMI – Tous droits réservés</p>
 </div>
 
-<!-- SCRIPT SLIDER -->
 <script>
 const slides = document.querySelectorAll('.hero-slider .slide');
 const dotsContainer = document.querySelector('.slider-dots');
@@ -272,7 +318,6 @@ const rightArrow = document.querySelector('.arrow.right');
 
 let index = 0;
 
-// Création des points
 slides.forEach((_, i) => {
   const dot = document.createElement('span');
   if (i === 0) dot.classList.add('active');
@@ -321,7 +366,3 @@ document.querySelector('.hero-slider').addEventListener('mouseout', () => {
 
 </body>
 </html>
-
-
-
-
